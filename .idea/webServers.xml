@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4bbf88b0-0432-4f8c-9206-af02cec25a15" name="Stott.info" url="http://137.74.117.170">
+        <fileTransfer host="137.74.117.170" port="22" rootFolder="/var/www/html/" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
