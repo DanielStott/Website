@@ -14,9 +14,28 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    background-image:url("../img/real_cf.png");
-    background-repeat: repeat;
+    background-color: #969696;
+    height: 100%;
 }
+
+body {
+    /*background-image:url("../img/real_cf.png");
+    background-repeat: repeat;*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#343a40+0,606060+3,606060+97,343a40+100 */
+    background: #343a40; /* Old browsers */
+    background: -moz-linear-gradient(left, #343a40 0%, #606060 3%, #606060 97%, #343a40 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #343a40 0%,#606060 3%,#606060 97%,#343a40 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #343a40 0%,#606060 3%,#606060 97%,#343a40 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343a40', endColorstr='#343a40',GradientType=1 ); /* IE6-9 */
+    width:80%;
+    min-height: 100%;
+    margin:auto !important;
+}
+
+.navbar-brand {
+    position: absolute;
+}
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -288,5 +307,13 @@ textarea {
     h2,
     h3 {
         page-break-after: avoid;
+    }
+
+    content {
+        margin-top: 30px;
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
     }
 }
