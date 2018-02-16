@@ -32,10 +32,25 @@ body {
     margin:auto !important;
 }
 
-.navbar-brand {
-    position: absolute;
+footer {
+    width: 80%;
+    margin: auto !important;
+    font-size:12px;
+    padding:0 !important;
 }
 
+.navbar-brand {
+    position: absolute;
+    top: .3125rem;
+}
+
+a {
+    color: white !important;
+}
+
+a:hover {
+   color: grey !important;
+}
 
 /*
  * Remove text-shadow in selection highlight:
