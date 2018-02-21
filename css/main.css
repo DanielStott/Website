@@ -16,6 +16,8 @@ html {
     line-height: 1.4;
     background-color: #969696;
     height: 100%;
+    background-image:url("../img/real_cf.png");
+    background-repeat: repeat;
 }
 
 body {
@@ -28,15 +30,14 @@ body {
     background: linear-gradient(to right, #343a40 0%,#606060 3%,#606060 97%,#343a40 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343a40', endColorstr='#343a40',GradientType=1 ); /* IE6-9 */
     width:80%;
-    min-height: 100%;
-    margin:auto !important;
+    margin: auto !important;
 }
 
+
 footer {
-    width: 80%;
-    margin: auto !important;
     font-size:12px;
-    padding:0 !important;
+    position: relative;
+    padding-bottom:3px !important;
 }
 
 .navbar-brand {
