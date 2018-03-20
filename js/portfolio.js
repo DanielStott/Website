@@ -13,14 +13,15 @@
         method: "GET",
         type:"JSON",
         url: "https://api.github.com/users/WilliamStott/repos",
-    })
-        .done(function (data) {
+        success: (function (data) {
             PopulateCards(data);
-        });
+        }),
+        error: (function(data) {
+            alert(data);
+        })});
 
     function PopulateCards(data) {
         var cardTemplate = "<div class='card text-white bg-dark'>" +
-            "<img class='card-img-top' src='http://via.placeholder.com/260x180' alt='Card image'>" +
             "<div class='card-body'>" +
             "<h5 class='card-title'>{0}</h5>" +
             "<p class='card-text'>{1}</p>" +
@@ -29,7 +30,7 @@
             "</div>" +
             "</div>";
 
-        $cards = $('#cards');
+        $cards = $('#github');
 
         for (var i = 0, repoLength = data.length; i < repoLength; i++) {
             if (i % 3 == 0) {
@@ -41,7 +42,10 @@
 
         }
 
+
+
     }
+
 
 
 }());
